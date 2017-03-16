@@ -67,17 +67,17 @@
 	#elif ENABLED(U8GLIB_ST7920)
 		#undef BEEPER_PIN
 
-    #ifdef REPRAP_DISCOUNT_SMART_CONTROLLER
-      #define BEEPER_PIN 28
-      #define LCD_PINS_RS        30
-      #define LCD_PINS_ENABLE    29
-      #define LCD_PINS_D4        17
-    #else
-  		#define BEEPER_PIN 17
-  		#define LCD_PINS_RS        27
-  		#define LCD_PINS_ENABLE    28
-  		#define LCD_PINS_D4        30
-    #endif
+	    	#ifdef REPRAP_DISCOUNT_SMART_CONTROLLER
+      			#define BEEPER_PIN 	   28
+      			#define LCD_PINS_RS        30
+      			#define LCD_PINS_ENABLE    29
+      			#define LCD_PINS_D4        17
+    		#else
+  			#define BEEPER_PIN         17
+  			#define LCD_PINS_RS        27
+  			#define LCD_PINS_ENABLE    28
+  			#define LCD_PINS_D4        30
+    		#endif
     
 		#define ST7920_DELAY_1 DELAY_0_NOP
 		#define ST7920_DELAY_2 DELAY_1_NOP
