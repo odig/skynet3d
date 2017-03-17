@@ -724,10 +724,10 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MAX_POS     220
-#define X_MIN_POS     -33
-#define Y_MAX_POS     220
-#define Y_MIN_POS     -10
+#define X_MAX_POS     200
+#define X_MIN_POS     0
+#define Y_MAX_POS     180
+#define Y_MIN_POS     0
 #define Z_MAX_POS     240
 #define Z_MIN_POS   0
 
@@ -894,7 +894,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_XY (10*60)
 #define HOMING_FEEDRATE_Z  (6*60)
 
 //=============================================================================
